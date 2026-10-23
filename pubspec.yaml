@@ -9,7 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  cached_network_image: ^4.0.5
+  cupertino_icons: ^2.0.0
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -17,3 +19,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+  - images/
+  
+
