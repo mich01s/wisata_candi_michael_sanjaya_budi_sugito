@@ -16,9 +16,31 @@ class _SignupscreenState extends State<SignUpScreen> {
 
   String _errorText = '';
 
-  bool _isSignIn = false;
-
   bool _obscurePassword = true;
+
+  // TODO 1a: Membuat metode _signUp
+  void _signUp(){
+    final String name = _fullnameController.text.trim();
+    final String username = _usernameController.text.trim();
+    final String password = _passwordContorller.text.trim();
+    
+    if(password.length < 8||
+    !password.contains(RegExp(r'[A-Z]'))||
+    !password.contains(RegExp(r'[a-z]'))||
+    !password.contains(RegExp(r'[0-9]'))||
+    !password.contains(RegExp(r'!@#$%^&*()<>:?"{}|,.'))){
+      print('*** Sign up berhasil!');
+      print('Nama : $name');
+      print('Nama Pengguna: $username');
+      print('Password : $password');
+    }
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
