@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wisata_candi/screens/SignInScreen.dart';
+import 'package:wisata_candi/screens/signInScreen.dart';
 import 'package:wisata_candi/data/candi_data.dart';
 import 'package:wisata_candi/screens/SignUpScreen.dart';
 import 'package:wisata_candi/screens/detail_screen.dart';
